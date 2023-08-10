@@ -10,7 +10,6 @@ import { projects } from '../../utils/projectsData';
 import { useState, useEffect } from 'react';
 
 function Project({ project }) {
-
   const [greeting, setGreeting] = useState('');
   useEffect(() => {
     const fetchGreeting = async () => {
@@ -29,7 +28,7 @@ function Project({ project }) {
   return (
     <div className="project">
       <aside>
-      <h3>{greeting} You can deploy...</h3>
+        <h3>{greeting} You can deploy...</h3>
         <ul>
           {projects.map((project) => {
             return (

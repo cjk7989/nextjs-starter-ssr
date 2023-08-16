@@ -1,8 +1,7 @@
 export async function getServerSideProps() {
   var data = process.env.testsetting;
-  if(!data)
-  {
-    data = null
+  if (!data) {
+    data = null;
   }
   return { props: { data } };
 }
@@ -10,8 +9,6 @@ export async function getServerSideProps() {
 export default function Test({ data }) {
 
   return (
-        "<h1 className={styles.title}>" +
-          "Welcome to <a href='https://nextjs.org'>Next.js! The setting data is " + data +
-          " </a></h1>"
+    <div> <h1 className={styles.title}> Welcome to <a href="https://nextjs.org">Next.js! The setting data is {data}</a> </h1> </div>
   )
 }

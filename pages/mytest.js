@@ -9,9 +9,8 @@ export async function getServerSideProps() {
 export default function Test({ data }) {
   return (
     <div>
-      <h1 className={styles.title}>
-        Welcome to
-        <a href="https://nextjs.org">Next.js! The setting data is {data}</a>
+      <h1 className="SSR Test Page">
+        Welcome to <a href="https://nextjs.org">Next.js</a>! The setting data is {data}
       </h1>
     </div>
   );
